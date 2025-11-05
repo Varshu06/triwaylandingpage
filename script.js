@@ -23,10 +23,10 @@ if (hamburger) {
 window.addEventListener('scroll', () => {
     if (window.scrollY > 100) {
         navbar.style.background = 'rgba(10, 14, 39, 0.98)';
-        navbar.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.3)';
+        navbar.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.4)';
     } else {
         navbar.style.background = 'rgba(10, 14, 39, 0.95)';
-        navbar.style.boxShadow = 'none';
+        navbar.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.3)';
     }
 });
 
@@ -63,7 +63,7 @@ const animateCounter = (element, target, duration = 2000) => {
 };
 
 const observeStats = () => {
-    const stats = document.querySelectorAll('.stat-value');
+    const stats = document.querySelectorAll('.stat-value, .stat-value-large');
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting && !entry.target.classList.contains('animated')) {
@@ -300,14 +300,9 @@ window.addEventListener('scroll', () => {
     const scrolled = window.pageYOffset;
     const hero = document.querySelector('.hero');
     if (hero && scrolled < window.innerHeight * 0.8) {
-        const heroLeft = hero.querySelector('.hero-left');
-        const heroRight = hero.querySelector('.hero-right');
-        if (heroLeft) {
-            // Subtle parallax - don't move too much
-            heroLeft.style.transform = `translateY(${scrolled * 0.1}px)`;
-            heroLeft.style.opacity = Math.max(0.5, 1 - (scrolled / window.innerHeight) * 0.3);
-        }
+        const heroRight = hero.querySelector('.hero-right-visual');
         if (heroRight) {
+            // Subtle parallax for mockup
             heroRight.style.transform = `translateY(${scrolled * 0.05}px)`;
         }
     }

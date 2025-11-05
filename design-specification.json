@@ -1,0 +1,469 @@
+{
+  "project": "Triway Technologies Landing Page",
+  "version": "1.0",
+  "designSystem": {
+    "colors": {
+      "triwayBlue": {
+        "hex": "#4A90E2",
+        "rgb": "74, 144, 226",
+        "usage": "Primary actions, navigation, links"
+      },
+      "triwayOrange": {
+        "hex": "#FF6B35",
+        "rgb": "255, 107, 53",
+        "usage": "Accents, highlights, secondary actions"
+      },
+      "triwayGreen": {
+        "hex": "#61A60E",
+        "rgb": "97, 166, 14",
+        "usage": "Success states, badges, positive indicators"
+      },
+      "darkBg": {
+        "hex": "#0A0E27",
+        "rgb": "10, 14, 39",
+        "usage": "Main background"
+      },
+      "darkSurface": {
+        "hex": "#151B3D",
+        "rgb": "21, 27, 61",
+        "usage": "Card backgrounds, sections"
+      },
+      "textPrimary": {
+        "hex": "#FFFFFF",
+        "rgb": "255, 255, 255",
+        "usage": "Main text, headings"
+      },
+      "textSecondary": {
+        "hex": "#B8C5D1",
+        "rgb": "184, 197, 209",
+        "usage": "Body text, descriptions"
+      },
+      "textMuted": {
+        "hex": "#7A8FA3",
+        "rgb": "122, 143, 163",
+        "usage": "Labels, secondary information"
+      }
+    },
+    "typography": {
+      "heading1": {
+        "fontFamily": "Poppins",
+        "fontWeight": "800",
+        "fontSize": "clamp(2.5rem, 5vw, 4.5rem)",
+        "lineHeight": "1.1",
+        "letterSpacing": "0"
+      },
+      "heading2": {
+        "fontFamily": "Poppins",
+        "fontWeight": "800",
+        "fontSize": "clamp(2rem, 4vw, 3.5rem)",
+        "lineHeight": "1.2",
+        "letterSpacing": "0"
+      },
+      "heading3": {
+        "fontFamily": "Poppins",
+        "fontWeight": "700",
+        "fontSize": "1.5rem",
+        "lineHeight": "1.3",
+        "letterSpacing": "0"
+      },
+      "bodyLarge": {
+        "fontFamily": "Poppins",
+        "fontWeight": "400",
+        "fontSize": "1.2rem",
+        "lineHeight": "1.8",
+        "letterSpacing": "0"
+      },
+      "body": {
+        "fontFamily": "Poppins",
+        "fontWeight": "400",
+        "fontSize": "1rem",
+        "lineHeight": "1.6",
+        "letterSpacing": "0"
+      },
+      "small": {
+        "fontFamily": "Poppins",
+        "fontWeight": "500",
+        "fontSize": "0.85rem",
+        "lineHeight": "1.5",
+        "letterSpacing": "0"
+      },
+      "logo": {
+        "fontFamily": "Space Grotesk",
+        "fontWeight": "700",
+        "fontSize": "1.1rem",
+        "lineHeight": "1",
+        "letterSpacing": "2px",
+        "textTransform": "uppercase"
+      }
+    },
+    "spacing": {
+      "xs": "0.5rem",
+      "sm": "1rem",
+      "md": "1.5rem",
+      "lg": "2rem",
+      "xl": "3rem",
+      "2xl": "4rem",
+      "3xl": "6rem"
+    },
+    "borderRadius": {
+      "sm": "12px",
+      "md": "16px",
+      "lg": "20px",
+      "xl": "24px",
+      "full": "50px"
+    },
+    "shadows": {
+      "sm": "0 2px 8px rgba(0, 0, 0, 0.08)",
+      "md": "0 4px 16px rgba(0, 0, 0, 0.12)",
+      "lg": "0 8px 32px rgba(0, 0, 0, 0.16)",
+      "xl": "0 16px 48px rgba(0, 0, 0, 0.24)"
+    }
+  },
+  "sections": [
+    {
+      "name": "Navigation",
+      "height": "80px",
+      "background": "rgba(10, 14, 39, 0.95) with backdrop blur",
+      "components": [
+        {
+          "name": "Logo",
+          "type": "Triway Triangle Logo + Text",
+          "width": "40px height for triangles",
+          "text": "TRIWAY TECHNOLOGIES",
+          "position": "Left aligned"
+        },
+        {
+          "name": "Navigation Menu",
+          "items": ["Solutions", "Why Us", "Testimonials", "Get Started"],
+          "position": "Center/Right aligned"
+        }
+      ]
+    },
+    {
+      "name": "Hero Section",
+      "height": "100vh (min)",
+      "background": "Dark gradient with grid pattern",
+      "layout": "Split 50/50",
+      "leftSide": {
+        "badge": {
+          "text": "Official Zoho Partner",
+          "background": "rgba(97, 166, 14, 0.15)",
+          "border": "1px solid rgba(97, 166, 14, 0.3)",
+          "borderRadius": "50px"
+        },
+        "heading": {
+          "text": "Transform Your Business with Triway + Zoho",
+          "gradient": "Blue → Orange → Green"
+        },
+        "description": "Leading UAE businesses trust our innovative CRM and cloud solutions...",
+        "ctaButtons": [
+          {
+            "text": "Book Free Consultation",
+            "style": "Gradient (Blue to Orange)",
+            "borderRadius": "50px"
+          },
+          {
+            "text": "Explore Solutions",
+            "style": "Outline with border",
+            "borderRadius": "50px"
+          }
+        ],
+        "stats": [
+          {
+            "value": "500",
+            "label": "Businesses Transformed",
+            "color": "Gradient (Blue to Green)"
+          },
+          {
+            "value": "98",
+            "label": "% Satisfaction Rate",
+            "color": "Gradient (Blue to Green)"
+          },
+          {
+            "value": "15",
+            "label": "Years Excellence",
+            "color": "Gradient (Blue to Green)"
+          }
+        ]
+      },
+      "rightSide": {
+        "floatingCards": [
+          {
+            "icon": "Chart Line",
+            "text": "Growth Analytics",
+            "position": "Top left",
+            "color": "Blue"
+          },
+          {
+            "icon": "Cloud",
+            "text": "Cloud Solutions",
+            "position": "Top right",
+            "color": "Orange"
+          },
+          {
+            "icon": "Cogs",
+            "text": "Automation",
+            "position": "Bottom center",
+            "color": "Green"
+          }
+        ],
+        "centerLogo": {
+          "type": "Large Triangle Logo",
+          "size": "200px",
+          "animation": "Rotating triangles"
+        }
+      }
+    },
+    {
+      "name": "Value Propositions",
+      "background": "#151B3D",
+      "padding": "100px vertical",
+      "layout": "Grid 4 columns (responsive)",
+      "cards": [
+        {
+          "icon": "Stream",
+          "title": "Streamlined Workflows",
+          "color": "Blue",
+          "borderTop": "4px solid Blue"
+        },
+        {
+          "icon": "Chart Line",
+          "title": "Enhanced Productivity",
+          "color": "Orange",
+          "borderTop": "4px solid Orange"
+        },
+        {
+          "icon": "Cloud",
+          "title": "Future-Ready Cloud",
+          "color": "Green",
+          "borderTop": "4px solid Green"
+        },
+        {
+          "icon": "Shield",
+          "title": "Robust Security",
+          "color": "Blue",
+          "borderTop": "4px solid Blue"
+        }
+      ]
+    },
+    {
+      "name": "Solutions",
+      "background": "#0A0E27",
+      "padding": "100px vertical",
+      "layout": "Grid 4 columns (responsive)",
+      "cards": [
+        {
+          "number": "01",
+          "icon": "Cogs",
+          "title": "CRM Implementation",
+          "color": "Blue gradient",
+          "features": [
+            "Custom pipeline configuration",
+            "Sales automation",
+            "Lead management"
+          ]
+        },
+        {
+          "number": "02",
+          "icon": "Robot",
+          "title": "Process Automation",
+          "color": "Orange gradient",
+          "features": [
+            "Workflow automation",
+            "Custom applications",
+            "Integration capabilities"
+          ]
+        },
+        {
+          "number": "03",
+          "icon": "Plug",
+          "title": "Cloud Integrations",
+          "color": "Green gradient",
+          "features": [
+            "Third-party integrations",
+            "API development",
+            "Data synchronization"
+          ]
+        },
+        {
+          "number": "04",
+          "icon": "User Tie",
+          "title": "Expert Consulting",
+          "color": "Blue gradient",
+          "features": [
+            "Strategic planning",
+            "Best practices",
+            "Ongoing support"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Why Choose Us",
+      "background": "#151B3D",
+      "padding": "100px vertical",
+      "layout": "Split 50/50",
+      "leftSide": {
+        "tag": "Why Triway",
+        "heading": "Trusted by Leading UAE Businesses",
+        "features": [
+          {
+            "icon": "Certificate",
+            "title": "Zoho Certified Partner",
+            "description": "Official partnership credentials",
+            "color": "Blue"
+          },
+          {
+            "icon": "Rocket",
+            "title": "Rapid Deployment",
+            "description": "Quick implementation without compromising quality",
+            "color": "Orange"
+          },
+          {
+            "icon": "Headset",
+            "title": "Expert Support",
+            "description": "Dedicated specialists available at every step",
+            "color": "Green"
+          }
+        ]
+      },
+      "rightSide": {
+        "testimonial": {
+          "quote": "Large quotation mark",
+          "text": "Testimonial text in italic",
+          "author": {
+            "avatar": "Circular with initials",
+            "name": "Name",
+            "title": "Position, Company"
+          }
+        },
+        "carousel": {
+          "controls": "Previous/Next buttons + Dots",
+          "color": "Blue"
+        }
+      }
+    },
+    {
+      "name": "CTA Section",
+      "background": "#0A0E27",
+      "padding": "100px vertical",
+      "layout": "Split 50/50",
+      "leftSide": {
+        "heading": "Ready to Transform Your Business?",
+        "description": "Join hundreds of UAE businesses...",
+        "buttons": [
+          "Get Started with Zoho",
+          "Download Free Guide"
+        ]
+      },
+      "rightSide": {
+        "form": {
+          "background": "rgba(21, 27, 61, 0.8)",
+          "borderRadius": "24px",
+          "fields": [
+            "Full Name",
+            "Email Address",
+            "Company Name",
+            "Message (textarea)"
+          ],
+          "submitButton": "Gradient (Blue to Orange)"
+        }
+      }
+    },
+    {
+      "name": "Footer",
+      "background": "#151B3D",
+      "padding": "60px top, 20px bottom",
+      "layout": "4 columns",
+      "columns": [
+        {
+          "title": "Company Info",
+          "logo": "Triway Logo",
+          "description": "Company description",
+          "socialLinks": ["LinkedIn", "Twitter", "Facebook", "Instagram"]
+        },
+        {
+          "title": "Solutions",
+          "links": ["CRM Implementation", "Process Automation", "Cloud Integrations", "Consulting Services"]
+        },
+        {
+          "title": "Company",
+          "links": ["Why Choose Us", "Testimonials", "Contact Us", "About Us"]
+        },
+        {
+          "title": "Resources",
+          "links": ["Free Guides", "Case Studies", "Expert Insights", "Blog"]
+        }
+      ]
+    }
+  ],
+  "components": {
+    "buttons": {
+      "primary": {
+        "background": "Linear gradient (135deg, #4A90E2 to #FF6B35)",
+        "color": "White",
+        "padding": "1rem 2.5rem",
+        "borderRadius": "50px",
+        "fontSize": "1.05rem",
+        "fontWeight": "600",
+        "shadow": "0 4px 20px rgba(74, 144, 226, 0.3)"
+      },
+      "secondary": {
+        "background": "Transparent",
+        "color": "White",
+        "border": "2px solid rgba(255, 255, 255, 0.2)",
+        "padding": "1rem 2.5rem",
+        "borderRadius": "50px",
+        "fontSize": "1.05rem",
+        "fontWeight": "600"
+      }
+    },
+    "cards": {
+      "valueCard": {
+        "background": "rgba(21, 27, 61, 0.6)",
+        "border": "1px solid rgba(255, 255, 255, 0.1)",
+        "borderRadius": "24px",
+        "padding": "2.5rem",
+        "hover": "TranslateY(-10px), border color change"
+      },
+      "solutionCard": {
+        "background": "rgba(21, 27, 61, 0.6)",
+        "border": "1px solid rgba(255, 255, 255, 0.1)",
+        "borderTop": "4px solid (color based)",
+        "borderRadius": "24px",
+        "padding": "2.5rem",
+        "number": "Large number in corner (opacity 0.05)"
+      },
+      "floatingCard": {
+        "background": "rgba(21, 27, 61, 0.8) with backdrop blur",
+        "border": "1px solid rgba(255, 255, 255, 0.1)",
+        "borderRadius": "20px",
+        "padding": "1.5rem",
+        "animation": "Float up and down"
+      }
+    },
+    "logo": {
+      "triangles": {
+        "size": "40px (nav), 200px (hero)",
+        "colors": ["#4A90E2 (Blue)", "#FF6B35 (Orange)", "#61A60E (Green)"],
+        "animation": "Rotating (8s infinite)",
+        "arrangement": "Interlocking triangles"
+      }
+    }
+  },
+  "animations": {
+    "fadeInLeft": "From opacity 0, translateX(-30px) to normal",
+    "fadeInRight": "From opacity 0, translateX(30px) to normal",
+    "floatCard": "TranslateY animation (6s ease-in-out infinite)",
+    "rotateTriangle": "Rotate 360deg with scale (8s linear infinite)",
+    "gridMove": "Translate grid pattern (20s linear infinite)",
+    "gradientShift": "Hue rotate filter (3s ease-in-out infinite)"
+  },
+  "responsiveBreakpoints": {
+    "mobile": "max-width: 480px",
+    "tablet": "max-width: 768px",
+    "desktop": "max-width: 968px",
+    "large": "min-width: 1200px"
+  }
+}
+
