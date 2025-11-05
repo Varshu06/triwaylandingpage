@@ -1431,25 +1431,56 @@ body {
 
 .cta-buttons {
     display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
+    gap: 2rem;
+    flex-wrap: nowrap;
+    align-items: center;
+    flex-direction: row;
+}
+
+.cta-primary-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    background: transparent;
+    color: var(--triway-blue);
+    padding: 1rem 2rem;
+    border: 2px solid var(--triway-blue);
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.1rem;
+    transition: var(--transition);
+    white-space: nowrap;
+    min-width: fit-content;
+}
+
+.cta-primary-btn:hover {
+    background: rgba(74, 144, 226, 0.1);
+    border-color: var(--triway-green);
+    color: var(--triway-green);
 }
 
 .cta-secondary-outline {
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     gap: 0.5rem;
     background: transparent;
     color: var(--text-primary);
     padding: 1rem 2rem;
-    border: 2px solid rgba(255, 255, 255, 0.2);
-    border-radius: 50px;
+    border: 2px solid var(--triway-green);
+    border-radius: 8px;
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 700;
+    font-size: 1.1rem;
     transition: var(--transition);
+    white-space: nowrap;
+    min-width: fit-content;
 }
 
 .cta-secondary-outline:hover {
+    background: rgba(97, 166, 14, 0.1);
     border-color: var(--triway-green);
     color: var(--triway-green);
 }
